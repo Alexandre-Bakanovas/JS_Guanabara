@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            background-color: rgb(104, 104, 200);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(230, 230, 67);
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Olá, mundo! </h1>
+    <p>Já me livrei da maldição!!</p>
+
+
+    <script>
+        // var numero1 = Number.parseInt(window.prompt('Digite o primeiro número: ')) 
+        // var numero2 = Number.parseInt(window.prompt('Digite o segundo número: '))
+        var numero1 = Number(window.prompt('Digite o primeiro número: ')) 
+        var numero2 = Number(window.prompt('Digite o segundo número: '))
+        var soma = numero1 + numero2
+        window.alert(`A soma de ${numero1} e ${numero2} é igual a ${soma}`) // aqui eu estou passando soma para string, mas somente aqui.
+        window.alert(typeof soma)
+
+        // (number + number) para adição
+        // (string + string) para concatenação
+        // Quando se obtem o valor pelo window.prompt, o JS o trata como uma string.
+        // Number.parseInt(n) -> Transforma em um número inteiro
+        // Number.parseFloat(n) -> Transform em um float
+        // Number o JS irá decidir o que vai ser, inteiro ou float, fodac
+
+        // Para converter a variavel em uma string, basta usar:
+        //     String(n) no lugar do n, só colocar a sua variavel
+        //     n.toString()
+
+        // s.length -> mede quantas letrar tem a String
+        // s.toUpperCase() -> Coloca todas as strings em maiuscula
+        // s.toLowerCase() -> Coloca todas as strings em minuscula
+
+    </script>
+</body>
+</html>
+
+<!-- template string -> ${s}  Para utilizar ele, deve se atentar ao fato de que não se usa mais
+as aspas, nem simples ou duplas, mas sim a crase.-->
